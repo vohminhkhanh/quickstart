@@ -14,3 +14,16 @@ class DatabaseSeeder extends Seeder
         // $this->call(UsersTableSeeder::class);
     }
 }
+/**
+ * summary
+ */
+class insertData extends Seeder
+{
+	public function run()
+	{
+		DB::table('task')->insert([
+			['name'=>'tasks']
+		])
+	}
+  
+}
